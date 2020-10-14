@@ -1,0 +1,11 @@
+## node modules dir
+node_modules
+
+
+## dist dir
+dist
+
+.idea
+
+.DS_Store
+
