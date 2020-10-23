@@ -17,7 +17,7 @@ export default function CultivateSection() {
             <div className={style.content}>
                 <div className={style.section_image}>
                     <div className={style.image}>
-                        <img src={require("~resources/images/main.jpg").default} alt=""/>
+                        <img src={require("~resources/images/thinking.jpg").default} alt=""/>
                     </div>
                 </div>
                 <div className={style.section_list}>

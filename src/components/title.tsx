@@ -10,10 +10,13 @@ export enum TitlePosition {
     CENTER = "center"
 }
 
-export default function Title(props: { mainTitle: string, subtitle: string, position: TitlePosition }) {
+export default function Title(props: { mainTitle: string, subtitle: string, position?: TitlePosition }) {
+    const isLeft = props.position === TitlePosition.LEFT;
+    const isCenter = props.position === TitlePosition.CENTER;
+    const isRight = props.position === TitlePosition.RIGHT;
 
     return (
-        <div className={style.title}>
+        <div className={cls(style.title, isLeft && style.left_style, isRight && style.right_style)}>
             <h2>
                 <span className={style.subtitle}>{props.subtitle}</span>
                 <span>{props.mainTitle}</span>

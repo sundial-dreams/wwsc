@@ -6,19 +6,23 @@ import {createStore, Action} from 'redux';
 import {useSelector, useDispatch, Provider} from 'react-redux';
 
 import {Routers} from "./utils/constants";
+import { reducer, StoreState } from "./utils/redux";
 
 import MainPage from "./main";
 import MemberPage from "./member";
 import TutorPage from "./tutor";
+import ActivityPage from "./activity";
+import AchievementPage from "./achievement";
+import GraduatePage from "./graduate";
 
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 
+
 // @ts-ignore
 import '~resources/style/reset.global.scss';
 import '~resources/style/global.global.scss';
-import ActivityPage from "./activity";
-import AchievementPage from "./achievement";
+
 
 function App(): React.ReactElement {
 
@@ -32,6 +36,7 @@ function App(): React.ReactElement {
                     <Route path={Routers.TUTOR} component={TutorPage}/>
                     <Route path={Routers.ACTIVITY} component={ActivityPage}/>
                     <Route path={Routers.ACHIEVEMENT} component={AchievementPage}/>
+                    <Route path={Routers.GRADUATE} component={GraduatePage}/>
                 </Switch>
                 <Footer/>
             </BrowserRouter>
@@ -39,11 +44,9 @@ function App(): React.ReactElement {
     );
 }
 
-const store = createStore(() => {
-});
+const store = createStore(reducer);
 
 const AppContainer = process.env.NODE_ENV === 'development' ? ReactHotContainer : Fragment;
-
 
 ReactDOM.render(
     <AppContainer>

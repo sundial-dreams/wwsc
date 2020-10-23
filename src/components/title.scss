@@ -6,6 +6,32 @@
   color: #1f2329;
   width: 100%;
 
+  &.left_style {
+    left: 0;
+
+    h2 {
+      text-align: left;
+
+      span {
+        left: 0;
+      }
+    }
+  }
+
+  &.right_style {
+    left: unset;
+    right: 0;
+
+    h2 {
+      text-align: right;
+
+      span {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+
   h2 {
     height: 40px;
     width: 100%;
@@ -48,10 +74,12 @@
 
   &.center {
     text-align: center;
+
     span.subtitle {
       left: 50%;
       transform: translateX(-50%);
     }
+
     &::after {
       left: 50%;
       transform: translateX(-50%);

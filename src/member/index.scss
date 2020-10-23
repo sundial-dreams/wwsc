@@ -18,23 +18,33 @@
       background: white;
 
       .tutor_card {
-        width: 100%;
+        width: 90%;
         height: 30%;
         background: transparent;
         display: flex;
         margin: 10px 0;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+          box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        }
 
         .avatar_block {
           flex: 1;
+          padding: 10px;
+          box-sizing: border-box;
 
           img {
-            height: 100%;
+            height: 90%;
           }
 
         }
 
         .intro_block {
           flex: 3;
+          padding: 10px;
+          box-sizing: border-box;
 
           h3 {
             span {
@@ -64,11 +74,13 @@
     .right_block {
       flex: 1;
       padding-top: 100px;
+      position: relative;
 
-      h2 {
+      .content_text {
+        margin-top: 50px;
         color: #646a73;
-        font-size: 35px;
-        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.5;
       }
     }
 
@@ -78,23 +90,11 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #1f2329;
-
-    .title_block {
-      height: 10%;
-
-      h2 {
-        color: white;
-        width: 100%;
-        height: 100%;
-        font-size: 34px;
-        text-align: center;
-        line-height: 2;
-      }
-    }
+    background: rgba(0, 0, 0, .01);
+    padding: 20px 0;
 
     .student_block {
-      height: 90%;
+      height: 100%;
       width: 100%;
       position: relative;
 
@@ -109,16 +109,6 @@
 
       }
 
-      &::before {
-        left: 0;
-        background: linear-gradient(to right, #1f2329, transparent);
-      }
-
-      &::after {
-        right: 0;
-        background: linear-gradient(to left, #1f2329, transparent);
-
-      }
 
       .left_btn, .right_btn {
         position: absolute;
@@ -142,17 +132,129 @@
       }
 
       .student_list {
+        user-select: none;
         position: absolute;
         left: 0;
         top: 0;
         padding: 0 50px;
         display: flex;
-        align-items: self-start;
-        flex-wrap: wrap;
-        width: 200%;
+        flex-wrap: nowrap;
         height: 100%;
-        transition: .5s;
 
+        .student_title_card {
+          width: 30vw;
+          height: 100%;
+          display: inline-block;
+          vertical-align: top;
+
+          .content_text {
+            font-size: 14px;
+            line-height: 3;
+            color: #646a73;
+            margin-top: 50px;
+          }
+        }
+
+        .card {
+          display: inline-block;
+          height: 100%;
+          position: relative;
+          vertical-align: top;
+          box-sizing: border-box;
+          padding: 20px 30px;
+
+          .student_wrapper {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            align-items: flex-start;
+            //justify-content: center;
+          }
+
+          .title_wrapper {
+            h2 {
+              color: rgba(255, 255, 255, .4);
+              position: relative;
+              font-size: 60px;
+              height: 20px;
+
+              span {
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                color: white;
+                font-size: 24px;
+              }
+            }
+          }
+
+          .pagination_wrapper {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+          }
+
+
+        }
+
+        .card_01 {
+          width: 55vw;
+          background: #adcfff;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+
+          &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            z-index: 10;
+          }
+
+          &::after {
+            right: -20px;
+            background: #adcfff;
+          }
+
+          &::before {
+            left: -20px;
+            background: linear-gradient(to right, transparent 50%, white 50%);
+          }
+        }
+
+        .card_02 {
+          width: 70vw;
+          background: #c4c7ff;
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            z-index: 10;
+            right: -20px;
+            background: #c4c7ff;
+          }
+
+        }
+
+        .card_03 {
+          width: 60vw;
+          background: #dabfff;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
 
         .student_item {
           overflow: hidden;
@@ -170,6 +272,7 @@
             .student_mask {
               opacity: 1;
             }
+
             .student_name {
               opacity: 0;
             }
@@ -208,6 +311,7 @@
               font-weight: normal;
               line-height: 2;
             }
+
             p {
               font-size: 12px;
               line-height: 1.5;
@@ -221,5 +325,32 @@
       }
 
     }
+  }
+}
+
+
+.student_avatar {
+  width: auto;
+  height: 40%;
+  overflow: hidden;
+  border-radius: 3px;
+
+  background: white;
+  padding: 5px 5px 25px 5px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .03);
+  position: relative;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+  }
+
+  span {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    color: #646a73;
+    font-size: 12px;
   }
 }

@@ -59,6 +59,8 @@
   height: 100%;
   width: 100%;
   position: relative;
+  background: rgba(0, 0, 0, .02);
+  padding-top: 20px;
 
   .content {
     padding: 50px 100px;
@@ -70,9 +72,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 100px;
+    bottom: 50px;
   }
 }
+
 
 .paper_item {
   display: inline-flex;
@@ -81,23 +84,21 @@
   transition: .3s;
   padding: 5px;
 
-  &:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-    transform: scale(1.005);
-  }
 
   .left_elem {
     height: 80px;
+    width: 80px;
 
     img {
       height: 100%;
+      width: 100%;
     }
 
     & > div {
       height: 100%;
       width: 80px;
-      background: #646a73;
-      color: #dee0e3;
+      background: rgba(0, 0, 0, .1);
+      color: white;
       font-size: 40px;
       text-align: center;
       line-height: 80px;
@@ -109,9 +110,106 @@
     margin-left: 15px;
     font-size: 16px;
     color: #1f2329;
-    line-height: 1.2;
+    line-height: 1.5;
+    h3 {
+      font-size: 16px;
+    }
+    h4, h5 {
+      font-weight: normal;
+      font-size: 14px;
+      color: #646a73;
+    }
+
 
   }
+}
+
+
+.project_section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  padding-top: 20px;
+
+  .title_wrapper {
+
+  }
+
+  .project_list {
+    margin: 50px auto 0 auto;
+    width: 80%;
+    height: 65%;
+    font-size: 0;
+
+    .project_item {
+      width: 50%;
+      margin: 5px 0;
+    }
+
+  }
+
+  .pagination_wrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+.project_item {
+  display: inline-block;
+  font-weight: lighter;
+  line-height: 1.5;
+
+  .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, .1);
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .right {
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+
+    h3 {
+      color: #1f2329;
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #646a73;
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+    h5 {
+      font-size: 12px;
+      color: #646a73;
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+  }
+
+}
+
+.patent_section {
+  width: 100%;
+  height: 100%;
 }
 
 .pagination {
@@ -132,3 +230,5 @@
     }
   }
 }
+
+

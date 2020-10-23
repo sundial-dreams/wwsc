@@ -47,6 +47,30 @@
 
 }
 
+.third_section {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .02);
+  padding: 20px 100px;
+
+
+  .title_wrapper {
+    width: 100%;
+    height: 20px;
+    position: relative;
+  }
+
+  .professor_list {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+
+}
+
 .activity_photo_card_wrapper {
   position: relative;
   height: 500px;
@@ -147,5 +171,112 @@
   span.year {
     font-size: 12px;
     border-bottom: 1px dashed #dee0e3;
+  }
+}
+
+.professor_avatar_wrapper {
+  width: 150px;
+  height: 160px;
+  margin: 20px;
+  cursor: pointer;
+
+  .professor_avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .professor_info {
+    padding-top: 10px;
+    text-align: center;
+    color: #646a73;
+    font-size: 16px;
+
+  }
+}
+
+
+.professor_info_card {
+  user-select: none;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .left_block {
+    flex: 2;
+    background: rgba(0, 0, 0, .03);
+    padding: 10px;
+    box-sizing: border-box;
+
+    .avatar_wrapper {
+      height: 45%;
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+
+      .avatar {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .info {
+      text-indent: 10px;
+      color: #646a73;
+      font-size: 12px;
+      line-height: 2;
+
+      & > div {
+        &:first-child {
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+
+
+  }
+
+  .right_block {
+    flex: 3;
+    padding: 70px 10px 10px 10px;
+    color: #646a73;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    p {
+      text-indent: 30px;
+    }
+    .close_btn {
+      font-size: 28px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: #646a73;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      transform: rotate(45deg);
+    }
   }
 }

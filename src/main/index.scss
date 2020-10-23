@@ -237,14 +237,19 @@
       .section_one_image_block {
         flex: 2;
 
-        .section_one_image {
+        .section_one_image_wrapper {
           margin: 150px 100px 0 0;
           float: right;
           width: 60%;
           height: 60%;
-          background: lightblue;
           border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
 
@@ -260,14 +265,20 @@
       .section_two_image_block {
         flex: 2;
 
-        .section_two_image {
-          margin: 50px 100px 0 0;
+        .section_two_image_wrapper {
+          margin: 0 100px 0 0;
           display: inline-block;
-          height: 60%;
+          height: 80%;
           width: 70%;
-          background: cadetblue;
           border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, .02);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+          overflow: hidden;
+          transform: translateY(-70px);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
 
@@ -351,6 +362,7 @@
       margin-top: 20px;
       font-size: 14px;
       color: #646a73;
+      line-height: 2;
 
     }
   }

@@ -8,7 +8,7 @@ export default function ResearchSection() {
         <div className={cls(style.section, style.research_section)}>
             <div className={style.title}>
                 <h2>
-                    <span className={style.title_bg}>RESEARCH AREA</span>
+                    <span className={style.title_bg}>RESEARCH FIELDS</span>
                     <span>研究领域</span>
                 </h2>
             </div>
@@ -26,12 +26,16 @@ export default function ResearchSection() {
                         </div>
                     </div>
                     <div className={style.section_one_image_block}>
-                        <div className={style.section_one_image}/>
+                        <div className={style.section_one_image_wrapper}>
+                            <img src={require("~resources/images/research_areas.png").default} alt=""/>
+                        </div>
                     </div>
                 </div>
                 <div className={style.section_two}>
                     <div className={style.section_two_image_block}>
-                        <div className={style.section_two_image}/>
+                        <div className={style.section_two_image_wrapper}>
+                            <img src={require("~resources/images/system_framework.png").default} alt=""/>
+                        </div>
                     </div>
 
                     <div className={style.section_two_content}>

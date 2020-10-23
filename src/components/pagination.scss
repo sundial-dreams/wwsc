@@ -1,0 +1,19 @@
+.pagination {
+  display: inline-block;
+  height: 20px;
+
+  button {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    color: #646a73;
+    font-size: 14px;
+    background: white;
+    border: none;
+
+    &.active {
+      background: #dee0e3;
+      border: 1px solid #dee0e3;
+    }
+  }
+}

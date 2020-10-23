@@ -3,5 +3,6 @@ export const Routers = {
     MEMBER: '/member',
     TUTOR: '/tutor',
     ACTIVITY: "/activity",
-    ACHIEVEMENT: "/achievement"
+    ACHIEVEMENT: "/achievement",
+    GRADUATE: "/graduate"
 };
