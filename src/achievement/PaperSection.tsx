@@ -8,7 +8,7 @@ import style from "./index.scss";
 
 
 function PaperItem(props: { name: string, image: string, url: string, title: string, anchors: string, others: string }) {
-    const imgElem = props.image ? (<img src={props.image} alt=""/>) : (<div>{props.title[0]}</div>)
+    const imgElem = props.image ? (<img data-src={props.image} className="lazyload blur-up" alt=""/>) : (<div>{props.title[0]}</div>)
     return (
         <div className={style.paper_item}>
             <div className={style.left_elem}>

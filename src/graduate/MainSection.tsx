@@ -1,15 +1,15 @@
 import React from "react";
-// @ts-ignore
-import style from "./index.scss";
 import {SubtitleWithNumber} from "../components/title";
 import {otherStudentList, studentList} from "./data";
+// @ts-ignore
+import style from "./index.scss";
 
 function StudentItem(props: { avatar: string, level: string, name: string, intro: string }) {
     return (
         <div className={style.student_item}>
             <div className={style.left}>
                 <div className={style.avatar_wrapper}>
-                    <img src={props.avatar} alt=""/>
+                    <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
                 </div>
             </div>
             <div className={style.right}>

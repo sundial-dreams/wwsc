@@ -3,6 +3,7 @@ import {SubtitleWithNumber} from "../components/title";
 
 // @ts-ignore
 import style from "./index.scss";
+import {imageUrl} from "../utils/utils";
 
 export default function MainSection() {
     return (
@@ -18,7 +19,7 @@ export default function MainSection() {
             </div>
             <div className={style.right_block}>
                 <div className={style.books_image_wrapper}>
-                    <img src={require("~resources/images/books.jpg").default} alt=""/>
+                    <img data-src={imageUrl("/books.jpg")} className="lazyload blur-up" alt=""/>
                 </div>
             </div>
         </div>

@@ -9,7 +9,11 @@ export default function Footer() {
                 <div className={style.logo_wrapper}>
                     <h3>宽带无线通信实验室</h3>
                     <p>2002-2020 厦门大学信息与通信工程系 科研二 514</p>
-                    <p>design and development by dengpengfei</p>
+                    <p>
+                        <a href="https://juejin.im/user/3597257776569565/posts">
+                            design & development by dengpengfei
+                        </a>
+                    </p>
                 </div>
             </div>
             <div className={style.middle_block}>
@@ -20,8 +24,8 @@ export default function Footer() {
             <div className={style.right_block}>
                 <p>关注我们，了解实时信息</p>
                 <div className={style.follow_us_channel}>
-                    <button></button>
-                    <button></button>
+                    <button>+</button>
+                    <button>-</button>
                 </div>
             </div>
         </div>

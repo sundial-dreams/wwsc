@@ -12,7 +12,7 @@ function ProfessorAvatar(props: { avatar: string, name: string, onClick: () => v
     return (
         <div className={style.professor_avatar_wrapper}>
             <div className={style.professor_avatar} onClick={props.onClick}>
-                <img src={props.avatar} alt=""/>
+                <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
             </div>
             <div className={style.professor_info}>
                 <span>{props.name}</span>
@@ -21,7 +21,7 @@ function ProfessorAvatar(props: { avatar: string, name: string, onClick: () => v
     )
 }
 
-export default function ThirdSection() {
+export default function ProfessorSection() {
 
     const professors = professorList.map((v, i) => {
         const handleClick = () => {

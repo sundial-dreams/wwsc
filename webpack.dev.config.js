@@ -23,7 +23,7 @@ const entry = {
 const htmlWebpackPlugin = Object.keys(entry).map(name => new HtmlWebpackPlugin({
     inject: 'body',
     scriptLoading: 'defer',
-    template: path.join(__dirname, 'resources/template/template.html'),
+    template: path.join(__dirname, 'resources/template/template.ejs'),
     minify: false,
     filename: `${name}.html`,
     chunks: [name]

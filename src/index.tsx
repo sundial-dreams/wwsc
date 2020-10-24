@@ -1,12 +1,14 @@
 import {AppContainer as ReactHotContainer} from 'react-hot-loader';
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
-import {Switch, Route, useHistory, HashRouter, BrowserRouter} from 'react-router-dom';
-import {createStore, Action} from 'redux';
-import {useSelector, useDispatch, Provider} from 'react-redux';
+import {Switch, Route, HashRouter} from 'react-router-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 import {Routers} from "./utils/constants";
-import { reducer, StoreState } from "./utils/redux";
+import {reducer} from "./utils/redux";
 
 import MainPage from "./main";
 import MemberPage from "./member";
@@ -28,7 +30,7 @@ function App(): React.ReactElement {
 
     return (
         <div id="app">
-            <BrowserRouter>
+            <HashRouter>
                 <Navigation/>
                 <Switch>
                     <Route path={Routers.MAIN} exact component={MainPage}/>
@@ -39,7 +41,7 @@ function App(): React.ReactElement {
                     <Route path={Routers.GRADUATE} component={GraduatePage}/>
                 </Switch>
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
@@ -54,5 +56,5 @@ ReactDOM.render(
             <App/>
         </Provider>
     </AppContainer>,
-    document.getElementById('app')
+    document.getElementById('root')
 );

@@ -12,7 +12,7 @@ function StudentPhoto(props: { level: string, name: string, avatar: string }) {
     };
     return (
         <div className={style.student_avatar}>
-            <img src={props.avatar} alt=""/>
+            <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
             <span>{props.level} | {props.name}</span>
         </div>
     )

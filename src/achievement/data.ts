@@ -1,9 +1,11 @@
+import {imageUrl} from "../utils/utils";
+
 export const paperList = [
     {
         name: "Xiangming Cai, Weikai Xu*, Meiyuan Miao, Lin Wang, Design and Performance Analysis of a New M-ary Differential Chaos Shift Keying with Index Modulation, IEEE Transactions on Wireless Communications, accepted for publication, 2019.(SCI, JCR2)",
         url: "",
         title: "Design and Performance Analysis of a New M-ary Differential Chaos Shift Keying with Index Modulation",
-        image: require("~resources/images/xlk.jpeg").default,
+        image: imageUrl("xlk.jpeg"),
         anchors: "Xiangming Cai, Weikai Xu*, Meiyuan Miao, Lin Wang",
         others: "IEEE Transactions on Wireless Communications, accepted for publication, 2019.(SCI, JCR2)"
     },

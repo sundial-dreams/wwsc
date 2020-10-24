@@ -1,10 +1,18 @@
-export const cls = (...name: any[]) => name.join(" ");
+export const cls: (...name: any[]) => string = (...name: any[]) => name.join(" ");
 
 
-export const stringify = (object: any) => Object.keys(object).reduce((acc, curKey) => acc + `${curKey}=${object[curKey]}`, "").replace(/&$/g, "");
+export const stringify: (object: any) => string = (object: any) => Object.keys(object).reduce((acc, curKey) => acc + `${curKey}=${object[curKey]}`, "").replace(/&$/g, "");
 
 export const parser: (str: string) => any = (str: string) => str.replace(/^\?/g, "").split("&").reduce((acc, curToken) => {
     const [k, v] = curToken.split("=");
     (acc as any)[k] = v;
     return acc;
 }, {});
+
+export const imageUrl: (url: string) => string = (url: string) => {
+    const isDev = process.env.NODE_ENV === 'development';
+    url = url.replace(/^\//g, "");
+    // TODO 需要改哦
+    const prodPrefix = "http://47.98.102.22:8080/images";
+    return isDev ? require(`~resources/images/${url}`).default : `${prodPrefix}/${url}`;
+};

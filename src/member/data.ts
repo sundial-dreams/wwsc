@@ -1,43 +1,45 @@
+import {imageUrl} from "../utils/utils";
+
 export const studentList1 = [
     {
         name: "樊婷婷",
-        avatar: require("~resources/images/member/ftt.jpg").default,
+        avatar: imageUrl("/member/ftt.jpg"),
         level: "博士后",
     },
     {
         name: "刘三亚",
-        avatar: require("~resources/images/member/lsy.jpg").default,
+        avatar: imageUrl("/member/lsy.jpg"),
         level: "博士"
     },
     {
         name: "苗美媛",
-        avatar: require("~resources/images/member/mmy.jpg").default,
+        avatar: imageUrl("/member/mmy.jpg"),
         level: "博士"
 
     },
     {
         name: "许志平",
-        avatar: require("~resources/images/member/czp.jpg").default,
+        avatar: imageUrl("/member/czp.jpg"),
         level: "博士"
 
     },
 
     {
         name: "宋丹",
-        avatar: require("~resources/images/member/sd.jpg").default,
+        avatar: imageUrl("/member/sd.jpg"),
         level: "博士"
 
     },
 
     {
         name: "蔡相明",
-        avatar: require("~resources/images/member/cxm.jpg").default,
+        avatar: imageUrl("/member/cxm.jpg"),
         level: "博士"
     },
 
     {
         name: "吕逸杰",
-        avatar: require("~resources/images/member/lyj.jpg").default,
+        avatar: imageUrl("/member/lyj.jpg"),
         level: "博士"
     },
 
@@ -47,57 +49,57 @@ export const studentList1 = [
 export const studentList2 = [
     {
         name: "胡路瑶",
-        avatar: require("~resources/images/member/hly.jpg").default,
+        avatar: imageUrl("/member/hly.jpg"),
         level: "研究生"
     },
     {
         name: "王庆智",
-        avatar: require("~resources/images/member/wqz.jpg").default,
+        avatar: imageUrl("/member/wqz.jpg"),
         level: "研究生"
     },
     {
         name: "王朋",
-        avatar: require("~resources/images/member/wp.jpg").default,
+        avatar: imageUrl("/member/wp.jpg"),
         level: "研究生"
     },
     {
         name: "王斌",
-        avatar: require("~resources/images/member/wb.jpg").default,
+        avatar: imageUrl("/member/wb.jpg"),
         level: "研究生"
     },
     {
         name: "李艳茹",
-        avatar: require("~resources/images/member/lyr.jpg").default,
+        avatar: imageUrl("/member/lyr.jpg"),
         level: "研究生"
     },
     {
         name: "全凌淼",
-        avatar: require("~resources/images/member/qlm.jpg").default,
+        avatar: imageUrl("/member/qlm.jpg"),
         level: "研究生"
     },
     {
         name: "林魏威",
-        avatar: require("~resources/images/member/lww.jpg").default,
+        avatar: imageUrl("/member/lww.jpg"),
         level: "研究生"
     },
     {
         name: "任华荣",
-        avatar: require("~resources/images/member/rhr.jpg").default,
+        avatar: imageUrl("/member/rhr.jpg"),
         level: "研究生"
     },
     {
         name: "林思曼",
-        avatar: require("~resources/images/member/lsm.jpg").default,
+        avatar: imageUrl("/member/lsm.jpg"),
         level: "研究生"
     },
     {
         name: "邓欢",
-        avatar: require("~resources/images/member/dh.jpg").default,
+        avatar: imageUrl("/member/dh.jpg"),
         level: "研究生"
     },
     {
         name: "卢志宏",
-        avatar: require("~resources/images/member/lzh.jpg").default,
+        avatar: imageUrl("/member/lzh.jpg"),
         level: "研究生"
     },
 
@@ -106,47 +108,47 @@ export const studentList2 = [
 export const studentList3 = [
     {
         name: "邓鹏飞",
-        avatar: require("~resources/images/member/dpf.jpg").default,
+        avatar: imageUrl("/member/dpf.jpg"),
         level: "研一"
     },
     {
         name: "梁怡婷",
-        avatar: require("~resources/images/member/lyt.jpeg").default,
+        avatar: imageUrl("/member/lyt.jpeg"),
         level: "研一"
     },
     {
         name: "彭驿玲",
-        avatar: require("~resources/images/member/pyl.jpg").default,
+        avatar: imageUrl("/member/pyl.jpg"),
         level: "研一"
     },
     {
         name: "时雨",
-        avatar: require("~resources/images/member/sy.jpg").default,
+        avatar: imageUrl("/member/sy.jpg"),
         level: "研一"
     },
     {
         name: "郑亚男",
-        avatar: require("~resources/images/member/zyn.jpg").default,
+        avatar: imageUrl("/member/zyn.jpg"),
         level: "研一"
     },
     {
         name: "杨建红",
-        avatar: require("~resources/images/member/yjh.jpg").default,
+        avatar: imageUrl("/member/yjh.jpg"),
         level: "研一"
     },
     {
         name: "朱正杰",
-        avatar: require("~resources/images/member/zzj.jpg").default,
+        avatar: imageUrl("/member/zzj.jpg"),
         level: "研一"
     },
     {
         name: "王润峰",
-        avatar: require("~resources/images/member/wrf.jpg").default,
+        avatar: imageUrl("/member/wrf.jpg"),
         level: "研一"
     },
     {
         name: "任金凯",
-        avatar: require("~resources/images/member/rjk.jpg").default,
+        avatar: imageUrl("/member/rjk.jpg"),
         level: "研一"
     },
 
@@ -155,7 +157,7 @@ export const studentList3 = [
 
 export const tutorList = [
     {
-        avatar: require("~resources/images/wl.jpeg").default,
+        avatar: imageUrl("/wl.jpeg"),
         name: "王琳",
         position: "教授",
         id: "wangling",
@@ -163,7 +165,7 @@ export const tutorList = [
         intro: "教育部新世纪优秀人才、中国电子学会理事"
     },
     {
-        avatar: require("~resources/images/xlk.jpeg").default,
+        avatar: imageUrl("/xlk.jpeg"),
         name: "徐立凯",
         id: "xulikai",
         position: "副教授",
@@ -171,7 +173,7 @@ export const tutorList = [
         intro: ""
     },
     {
-        avatar: require("~resources/images/hsh.jpeg").default,
+        avatar: imageUrl("/hsh.jpeg"),
         name: "洪少华",
         id: "honshaohua",
         position: "副教授",

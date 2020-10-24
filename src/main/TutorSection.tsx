@@ -1,7 +1,7 @@
 import React from "react";
 import {useHistory} from "react-router";
 import {Routers} from "../utils/constants";
-import {cls, stringify} from "../utils/utils";
+import {cls, imageUrl, stringify} from "../utils/utils";
 
 // @ts-ignore
 import style from "./index.scss";
@@ -11,7 +11,7 @@ import style from "./index.scss";
 const tutorsInfo = [
     {
         id: "wangling",
-        avatar: require("~resources/images/wl.jpeg").default,
+        avatar: imageUrl("/wl.jpeg"),
         name: "王琳",
         position: "教授",
         field: "宽带无线通信、信息论与编码",
@@ -19,7 +19,7 @@ const tutorsInfo = [
     },
     {
         id: "xulikai",
-        avatar: require("~resources/images/xlk.jpeg").default,
+        avatar: imageUrl("/xlk.jpeg"),
         name: "徐立凯",
         position: "副教授",
         field: "超宽带与混沌通信",
@@ -27,7 +27,7 @@ const tutorsInfo = [
     },
     {
         id: "honshaohua",
-        avatar: require("~resources/images/hsh.jpeg").default,
+        avatar: imageUrl("/hsh.jpeg"),
         name: "洪少华",
         position: "副教授",
         field: "图像处理、压缩，信源信道联合编码",
@@ -44,7 +44,7 @@ function TutorCard(props: { id: string, avatar: string, name: string, position: 
     return (
         <div className={style.tutor_card} onClick={handleClick}>
             <div className={style.tutor_avatar_block}>
-                <img src={props.avatar} alt=""/>
+                <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
             </div>
             <div className={style.tutor_information_block}>
                 <h4>{props.field}</h4>

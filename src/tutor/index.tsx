@@ -7,9 +7,11 @@ import {parser} from "../utils/utils";
 
 
 export default function TutorPage() {
-    const id = parser(window.location.search).tutor_id;
+    const [_, pathname] = window.location.href.split("#");
+    const [__, search] = pathname.split("?");
+    const id = parser(search).tutor_id;
+    console.log(search);
     let tutor = (tutorInfoMap as any)[id];
-    console.log(id);
 
     tutor = tutor ? tutor : tutorInfoMap.wanglin;
 
@@ -23,7 +25,7 @@ export default function TutorPage() {
                 </div>
                 <div className={style.right_block}>
                     <div className={style.tutor_avatar}>
-                        <img src={tutor.avatar} alt=""/>
+                        <img data-src={tutor.avatar} className="lazyload blur-up" alt=""/>
                     </div>
                 </div>
             </div>

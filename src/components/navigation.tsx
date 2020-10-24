@@ -41,8 +41,15 @@ export default function Navigation() {
         let currentHeight = document.body.scrollTop;
         window.addEventListener('scroll', (e) => {
             let height = document.body.scrollTop;
-            const curPath = window.location.pathname;
+            let {href} = window.location;
+            let [_, pathname] = href.split("#");
+
+            pathname = pathname.replace(/\?+/g, "");
+
+            const curPath = pathname;
+
             if (curPath !== "/") return;
+
             if (height > document.documentElement.clientHeight / 3) {
                 setWhiteStyle(true);
             } else {
@@ -58,8 +65,11 @@ export default function Navigation() {
     });
 
     useEffect(() => {
-        const curPath = window.location.pathname;
-        // console.log("currentLocation = ", currentLocation);
+
+        let {href} = window.location;
+        let [_, pathname] = href.split("#");
+        const curPath = pathname.replace(/\?+/g, "");
+
         if (curPath !== Routers.MAIN) {
             setWhiteStyle(true);
         }

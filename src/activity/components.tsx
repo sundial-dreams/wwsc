@@ -6,7 +6,7 @@ export function PhotoItem(props: { photo: string, text: string }) {
     return (
         <div className={style.photo_item}>
             <div className={style.photo_wrapper}>
-                <img src={props.photo} alt=""/>
+                <img data-src={props.photo} className="lazyload blur-up" alt=""/>
             </div>
             <div className={style.text}>
                 <h4>
@@ -48,7 +48,7 @@ export function ProfessorInfoCard(props: { cancel: () => void, avatar: string, n
             <div className={style.left_block}>
                 <div className={style.avatar_wrapper}>
                     <div className={style.avatar}>
-                        <img src={props.avatar} alt=""/>
+                        <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
                     </div>
                 </div>
                 <div className={style.info}>

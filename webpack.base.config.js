@@ -12,6 +12,15 @@ module.exports = {
                         cacheDirectory: true
                     }
                 }
+            },
+            {
+                test: /\.html?$/,
+                use: {
+                    loader: "ejs-loader",
+                    options: {
+                        esModule: false
+                    }
+                }
             }
         ]
     },

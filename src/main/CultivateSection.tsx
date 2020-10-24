@@ -1,5 +1,5 @@
 import React from "react";
-import {cls} from "../utils/utils";
+import {cls, imageUrl} from "../utils/utils";
 
 // @ts-ignore
 import style from "./index.scss";
@@ -17,7 +17,7 @@ export default function CultivateSection() {
             <div className={style.content}>
                 <div className={style.section_image}>
                     <div className={style.image}>
-                        <img src={require("~resources/images/thinking.jpg").default} alt=""/>
+                        <img data-src={imageUrl("/thinking.jpg")} className="lazyload blur-up" alt=""/>
                     </div>
                 </div>
                 <div className={style.section_list}>

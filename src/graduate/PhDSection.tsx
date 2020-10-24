@@ -5,7 +5,7 @@ import style from "./index.scss";
 import {phdList} from "./data";
 
 function PhDItem(props: { avatar: string, name: string, year: string, intro: string }) {
-    const avatar = props.avatar ? (<img alt="" src={props.avatar}/>) : <div>{props.name[0]}</div>;
+    const avatar = props.avatar ? (<img alt="" data-src={props.avatar} className="lazyload blur-up"/>) : <div>{props.name[0]}</div>;
     return (
         <div className={style.phd_item}>
             <div className={style.left}>

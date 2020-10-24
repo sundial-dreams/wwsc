@@ -1,7 +1,9 @@
+import {imageUrl} from "../utils/utils";
+
 export const tutorInfoMap = {
     wanglin: {
         name: "王琳",
-        avatar: require("~resources/images/wl.jpeg").default,
+        avatar: imageUrl("/wl.jpeg"),
         email: "wanglin@xmu.edu.cn",
         field: "宽带无线通信、信息论与编码",
         position: "教授",
@@ -12,7 +14,7 @@ export const tutorInfoMap = {
     },
     xulikai: {
         name: "徐立凯",
-        avatar: require("~resources/images/xlk.jpeg").default,
+        avatar: imageUrl("/xlk.jpeg"),
         email: "xweikai@xmu.edu.cn",
         field: "无线通信；混沌通信",
         position: "副教授",
@@ -21,7 +23,7 @@ export const tutorInfoMap = {
     },
     honshaohua: {
         name: "洪少华",
-        avatar: require("~resources/images/hsh.jpeg").default,
+        avatar: imageUrl("/hsh.jpeg"),
         email: "hongsh@xmu.edu.cn",
         field: "图像压缩与处理 信源信道联合编码 非线性信号处理",
         position: "副教授",

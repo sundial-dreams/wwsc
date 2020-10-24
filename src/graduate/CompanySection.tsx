@@ -6,7 +6,7 @@ import {companies} from "./data";
 
 
 function CompanyLogoItem(props: { logo: string, name: string }) {
-    const elem = props.logo ? (<img src={props.logo} alt=""/>) : (<div>{props.name}</div>)
+    const elem = props.logo ? (<img data-src={props.logo} className="lazyload blur-up" alt=""/>) : (<div>{props.name}</div>)
     return (
         <div className={style.company_logo_item}>
             {elem}

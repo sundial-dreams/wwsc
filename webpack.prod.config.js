@@ -14,7 +14,7 @@ const entry = {
 const htmlWebpackPlugin = Object.keys(entry).map(name => new HtmlWebpackPlugin({
     inject: 'body',
     scriptLoading: 'defer',
-    template: path.join(__dirname, 'resources/template/template.html'),
+    template: path.join(__dirname, 'resources/template/template.ejs'),
     minify: false,
     filename: `index.html`,
     chunks: [name]
@@ -26,7 +26,11 @@ module.exports = merge.smart(webpackBaseConfig, {
     mode: 'production',
 
     target: 'web',
-
+    externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        'react-router': 'ReactRouter'
+    },
     entry,
 
     output: {
@@ -178,7 +182,11 @@ module.exports = merge.smart(webpackBaseConfig, {
                 use: {
                     loader: 'url-loader',
                     options: {
-                        limit: 5000
+                        outputPath: 'images',
+                        limit: 4069,
+                        fallback: {
+                            loader: 'file-loader'
+                        }
                     }
                 }
             }

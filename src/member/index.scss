@@ -201,7 +201,7 @@
         }
 
         .card_01 {
-          width: 55vw;
+          width: 800px;
           background: #adcfff;
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
@@ -230,7 +230,7 @@
         }
 
         .card_02 {
-          width: 70vw;
+          width: 1000px;
           background: #c4c7ff;
 
           &::after {
@@ -250,7 +250,7 @@
         }
 
         .card_03 {
-          width: 60vw;
+          width: 900px;
           background: #dabfff;
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
@@ -331,9 +331,10 @@
 
 .student_avatar {
   width: auto;
-  height: 40%;
+  height: 35%;
   overflow: hidden;
   border-radius: 3px;
+  min-width: 100px;
 
   background: white;
   padding: 5px 5px 25px 5px;

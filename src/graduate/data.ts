@@ -1,21 +1,23 @@
+import {imageUrl} from "../utils/utils";
+
 export const studentList = [
     {
         name: "吴辉辉",
         level: "2014届硕士",
         intro: "2018年8月获得加拿大McMaster大学博士学位（全额奖学金），哥伦比亚大学博士后，目前是麦克吉尔大学博士后",
-        avatar: require("~resources/images/graduate/whh.jpg").default
+        avatar: imageUrl("/graduate/whh.jpg")
     },
     {
         name: "何继光",
         level: "2013届硕士",
         intro: "2018年11月获得芬兰奥卢大学博士学位（全额奖学金），目前是芬兰奥卢大学博士后",
-        avatar: require("~resources/images/graduate/hjg.jpg").default
+        avatar: imageUrl("/graduate/hjg.jpg")
     },
     {
         name: "孔龙",
         level: "2013届硕士",
         intro: "2019年4月获得加拿大魁北克大学ETS（工学院）博士学位（全额奖学金），目前是卢森堡大学博士后",
-        avatar: require("~resources/images/graduate/kl.jpg").default
+        avatar: imageUrl("/graduate/kl.jpg")
     },
 ];
 
@@ -59,33 +61,33 @@ export const otherStudentList = [
 export const companies = [
     {
         name: "华为",
-        logo: require("~resources/images/companies/huawei.jpeg").default,
+        logo: imageUrl("/companies/huawei.jpeg"),
     },
     {
         name: "海思半导体",
-        logo: require("~resources/images/companies/hisilicon.jpeg").default,
+        logo: imageUrl("/companies/hisilicon.jpeg"),
     },
     {
         name: "烽火通信",
-        logo: require("~resources/images/companies/fiberhome.jpg").default,
+        logo: imageUrl("/companies/fiberhome.jpg"),
     },
     {
         name: "中国移动",
-        logo: require("~resources/images/companies/yidong.jpeg").default,
+        logo: imageUrl("/companies/yidong.jpeg"),
     },
 
     {
         name: "中国联通",
-        logo: require("~resources/images/companies/liantong.png").default,
+        logo: imageUrl("/companies/liantong.png"),
     },
 
     {
         name: "中国电信",
-        logo: require("~resources/images/companies/dianxing.jpeg").default,
+        logo: imageUrl("/companies/dianxing.jpeg"),
     },
     {
         name: "中国航天局",
-        logo: require("~resources/images/companies/casc.jpeg").default,
+        logo: imageUrl("/companies/casc.jpeg"),
     },
     // {
     //     name: "各省研究院",
@@ -100,13 +102,13 @@ export const companies = [
 
 export const phdList = [
     {
-        avatar: require("~resources/images/phd/xlk.jpeg").default,
+        avatar: imageUrl("/phd/xlk.jpeg"),
         name: "徐位凯",
         year: "2011届",
         intro: "目前是厦门大学通信工程系副教授"
     },
     {
-        avatar: require("~resources/images/phd/xw.jpg").default,
+        avatar: imageUrl("/phd/xw.jpg"),
         name: "肖旻",
         year: "2011届",
         intro: "目前是厦门理工学院通信工程系主任、副教授"
@@ -130,19 +132,19 @@ export const phdList = [
         intro: "目前是福建师范大学光电与信息工程学院通信工程系副主任、副教授"
     },
     {
-        avatar: require("~resources/images/phd/ly.jpg").default,
+        avatar: imageUrl("/phd/ly.jpg"),
         name: "黎勇",
         year: "2012届",
         intro: "目前是重庆大学计算机学院副教授，博导"
     },
     {
-        avatar: require("~resources/images/phd/cpp.jpg").default,
+        avatar: imageUrl("/phd/cpp.jpg"),
         name: "陈平平",
         year: "2012届",
         intro: "目前是福州大学物理与信息工程学院教授，福建省杰青，博导"
     },
     {
-        avatar: require("~resources/images/phd/fy.jpg").default,
+        avatar: imageUrl("/phd/fy.jpg"),
         name: "方毅",
         year: "2013届",
         intro: "目前是广东工业大学信息工程学院副教授（青年百人引进人才A类），青年珠江学者，博导"
@@ -154,7 +156,7 @@ export const phdList = [
         intro: "目前是上海华为射频部算法工程师"
     },
     {
-        avatar: require("~resources/images/phd/cgf.jpg").default,
+        avatar: imageUrl("/phd/cgf.jpg"),
         name: "蔡国发",
         year: "2015届",
         intro: "目前是广东工业大学特聘副教授（青年百人引进人才A类）"
@@ -178,13 +180,13 @@ export const phdList = [
         intro: "前是华侨大学工学院助理教授"
     },
     {
-        avatar: require("~resources/images/phd/cc.jpg").default,
+        avatar: imageUrl("/phd/cc.jpg"),
         name: "陈辰",
         year: "2018届",
         intro: "目前是华侨大学信息科学与工程学院助理教授"
     },
     {
-        avatar: require("~resources/images/phd/cqw.jpg").default,
+        avatar: imageUrl("/phd/cqw.jpg"),
         name: "陈启望",
         year: "2018届",
         intro: "目前是宁波大学信息科学与工程学院助理教授"

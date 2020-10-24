@@ -13,7 +13,7 @@ export default function TutorCard(props: { id: string, avatar: string, name: str
     return (
         <div className={style.tutor_card} onClick={handleClick}>
             <div className={style.avatar_block}>
-                <img src={props.avatar} alt=""/>
+                <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
             </div>
             <div className={style.intro_block}>
                 <h3>{props.name}<span> | {props.position}</span></h3>

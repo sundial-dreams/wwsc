@@ -1,5 +1,5 @@
 import React from "react";
-import {cls} from "../utils/utils";
+import {cls, imageUrl} from "../utils/utils";
 // @ts-ignore
 import style from "./index.scss";
 
@@ -27,14 +27,14 @@ export default function ResearchSection() {
                     </div>
                     <div className={style.section_one_image_block}>
                         <div className={style.section_one_image_wrapper}>
-                            <img src={require("~resources/images/research_areas.png").default} alt=""/>
+                            <img data-src={imageUrl("/research_areas.png")} className="lazyload" alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className={style.section_two}>
                     <div className={style.section_two_image_block}>
                         <div className={style.section_two_image_wrapper}>
-                            <img src={require("~resources/images/system_framework.png").default} alt=""/>
+                            <img data-src={imageUrl("/system_framework.png")} className="lazyload blur-up" alt=""/>
                         </div>
                     </div>
 
