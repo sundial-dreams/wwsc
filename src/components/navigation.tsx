@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {cls} from "../utils/utils";
+import {cls, imageUrl} from "../utils/utils";
 
 // @ts-ignore
 import style from './navigation.scss';
@@ -94,7 +94,11 @@ export default function Navigation() {
     return (
         <div className={cls(style.navigation, hidden && style.hidden, whiteStyle && style.white_style)}>
             <div className={style.left_logo}>
-
+                <div className={style.logo}>
+                    <span>
+                        {/*<img src={imageUrl("/logo_lab.png")} alt=""/>*/}
+                    </span>
+                </div>
             </div>
             <div className={style.right_block}>
                 {titlesElem}

@@ -18,9 +18,9 @@ const tutorsInfo = [
         intro: "教育部新世纪优秀人才、中国电子学会理事"
     },
     {
-        id: "xulikai",
-        avatar: imageUrl("/xlk.jpeg"),
-        name: "徐立凯",
+        id: "xuweikai",
+        avatar: imageUrl("/xwk.jpeg"),
+        name: "徐位凯",
         position: "副教授",
         field: "超宽带与混沌通信",
         intro: ""

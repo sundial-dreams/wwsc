@@ -20,8 +20,16 @@ export function PhotoItem(props: { photo: string, text: string }) {
 export function PhotoCard(props: { photoItems: Array<React.ReactElement> }) {
     return (
         <div className={style.activity_photo_card_wrapper}>
-            <button className={style.left_btn}> +</button>
-            <button className={style.right_btn}> -</button>
+            <button className={style.left_btn}>
+                <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16318" width="48" height="48">
+                    <path d="M448 196.032L514.56 128l362.24 369.92c24.896 25.408 25.472 66.176 0 92.16L514.56 960 448 891.968 788.672 544 448 196.032z" p-id="16319" fill="#bfbfbf"/>
+                </svg>
+            </button>
+            <button className={style.right_btn}>
+                <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16318" width="48" height="48">
+                    <path d="M448 196.032L514.56 128l362.24 369.92c24.896 25.408 25.472 66.176 0 92.16L514.56 960 448 891.968 788.672 544 448 196.032z" p-id="16319" fill="#bfbfbf"/>
+                </svg>
+            </button>
             <div className={style.activity_photo_card}>
                 <div className={style.photo_card_views}>
                     {props.photoItems}

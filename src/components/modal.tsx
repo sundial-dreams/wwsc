@@ -8,8 +8,8 @@ import style from "./modal.scss";
 export default function modal(contentFunction: (cancel: () => void) => ReactNode) {
     const div = document.createElement('div');
     div.className = style.__layer__wrapper;
-    const page = document.getElementById('page');
-    page?.appendChild(div);
+    const body = document.body;
+    body.appendChild(div);
 
     function destroy() {
         div.parentNode?.removeChild(div);

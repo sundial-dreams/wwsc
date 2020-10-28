@@ -55,9 +55,19 @@
       button {
         width: 34px;
         height: 34px;
-        background: lightcoral;
         border-radius: 50%;
         margin: 0 10px;
+        background: white;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+        svg {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }

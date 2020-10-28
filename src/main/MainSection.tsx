@@ -22,7 +22,7 @@ export default function MainSection() {
                     </button>
                 </div>
                 <div className={style.bottom_info}>
-                    厦门大学 海韵园 科研二（514）
+                    厦门大学 海韵园 科研二514、行政楼C509
                 </div>
             </div>
         </div>

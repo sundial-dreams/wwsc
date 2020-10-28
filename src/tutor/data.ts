@@ -12,13 +12,15 @@ export const tutorInfoMap = {
             "目前主要研究方向：宽带与带限数字通信系统理论及应用（6G、IoT，PLC，VLC，水声通信及体域网传输系统），信息论与编码（信源/信道编译码，联合信源信道编译码，网络编码）。已在SCI收录的IEEE汇刊等重要国际刊物（JCR4以上）发表学术论文81篇，其中1区4篇，2区24篇，IEEE期刊论文57篇，EI收录的主要国际会议上发表学术论文94篇；获IEEE ICCCAS 2005最佳论文奖，被评为IEEE Transaction on Communications 2015年杰出审稿人(＜2%)；授权国家发明专利16项; 主持完成多个国家863和国家自然科学基金及多项国际合作项目。多个IEEE国际会议大会主席与程序委员会共同主席。现为中国电子学会理事，IEEE高级会员，电子学报编委，电子与信息学报编委。"
         ]
     },
-    xulikai: {
-        name: "徐立凯",
-        avatar: imageUrl("/xlk.jpeg"),
+    xuweikai: {
+        name: "徐位凯",
+        avatar: imageUrl("/xwk.jpeg"),
         email: "xweikai@xmu.edu.cn",
         field: "无线通信；混沌通信",
         position: "副教授",
         selfIntros: [
+            "Weikai Xu (S'10-M'12) received the B.Sc. degree in electronic engineering from Three Gorges College, communication and information system from the cations, Chongqing, China, in 2003, and the Ph.D. degree in electronic circuit an system from the Xiamen University of China, Xiamen, China, in 2011.",
+            "From 2003 to 2012, he was a Teaching Assistant, and Assistant Professor of Department of Communication Engineering of Xiamen University. He is now an Associate Professor of Department of Information and Communication Engineering of Xiamen University. His research interests include chaotic communications, underwater acoustic communications, channel coding, cooperative communications and ultra-wideband."
         ]
     },
     honshaohua: {
@@ -28,6 +30,8 @@ export const tutorInfoMap = {
         field: "图像压缩与处理 信源信道联合编码 非线性信号处理",
         position: "副教授",
         selfIntros: [
+            "Shaohua Hong (M'12) received the B.Sc. degree in Electronics and Information Engineering from Zhejiang University, Hangzhou, China, in 2005, and the Ph.D. degree in Electronics Science and Technology from Zhejiang University, Hangzhou, China, in 2010.",
+            "Currently, He is an associate processor of Department of Information and Communication Engineering, Xiamen University, Xiamen, China. His Research interests include joint source and channel coding, wireless communication and image processing. Dr Hong serves as an Editor of KSII Transactions on Internet and Information Systems from 2015."
         ]
     }
 };

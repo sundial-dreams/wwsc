@@ -7,7 +7,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  padding: 0 64px 0 64px;
+  padding: 0 64px 0 25px;
   z-index: 1000;
   transition: .3s;
   color: white;
@@ -21,6 +21,12 @@
 
     box-shadow: 0 0 10px rgba(0, 0, 0, .05);
     color: #646a73;
+
+    .left_logo {
+      img {
+        background-blend-mode: white;
+      }
+    }
 
     .right_block {
       button {
@@ -43,6 +49,16 @@
   .left_logo {
     width: 100px;
     float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    .logo {
+      display: inline-block;
+      width: 100%;
+      img {
+        height: 45px;
+      }
+    }
   }
 
   .right_block {

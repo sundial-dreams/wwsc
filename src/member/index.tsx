@@ -17,8 +17,8 @@ const StudentTitleCard = () => (
         <SubtitleWithNumber number="STUDENT" subtitle="学生"/>
         <div className={style.content_text}>
             <p>目前博士后一人</p>
-            <p>在校博士生n人</p>
-            <p>在校研究生n人</p>
+            <p>在校博士生6人</p>
+            <p>在校研究生20人</p>
         </div>
     </div>
 );
@@ -51,8 +51,7 @@ export default function MemberPage() {
             if (!drag) return;
             let left = e.clientX - dx;
             if (left > 0) return;
-            console.log(left, studentBlock.offsetWidth);
-            if (-left > studentBlock.offsetWidth) return;
+            if (-left > studentBlock.offsetWidth / 1.9) return;
             studentBlock.style.left = left + "px";
         });
 
@@ -79,7 +78,6 @@ export default function MemberPage() {
                     <div className={style.content_text}>
                         <p>教育部新世纪优秀人才，教授、博导一人</p>
                         <p>副教授两人</p>
-                        <p>博士后一人</p>
                     </div>
                 </div>
             </div>

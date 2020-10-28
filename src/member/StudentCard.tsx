@@ -2,16 +2,19 @@ import React from "react";
 import {cls} from "../utils/utils";
 import Pagination from "../components/pagination";
 import {studentList1, studentList2, studentList3} from "./data";
+import modal from "../components/modal";
+import {StudentInfoCard} from "./components";
+
 // @ts-ignore
 import style from "./index.scss";
 
-function StudentPhoto(props: { level: string, name: string, avatar: string }) {
-    const number = Math.floor(30 * Math.random() - 15);
-    const rotateStyle = {
-        transform: `rotate(${number}deg)`
+function StudentPhoto(props: { level: string, name: string, avatar: string, fields: string, email: string, classOf: string, selfIntro: string[] }) {
+    const handleClick = () => {
+        modal((cancel) => <StudentInfoCard cancel={cancel} { ...props }/>);
     };
+
     return (
-        <div className={style.student_avatar}>
+        <div className={style.student_avatar} onClick={handleClick}>
             <img data-src={props.avatar} className="lazyload blur-up" alt=""/>
             <span>{props.level} | {props.name}</span>
         </div>

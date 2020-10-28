@@ -7,8 +7,8 @@ import {parser} from "../utils/utils";
 
 
 export default function TutorPage() {
-    const [_, pathname] = window.location.href.split("#");
-    const [__, search] = pathname.split("?");
+    const [, pathname] = window.location.href.split("#");
+    const [, search] = pathname.split("?");
     const id = parser(search).tutor_id;
     console.log(search);
     let tutor = (tutorInfoMap as any)[id];
