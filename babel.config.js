@@ -13,9 +13,7 @@ module.exports = api => {
     return {
         presets: [
             [require('@babel/preset-env'), {
-                targets: {
-                    electron: 'v9.0.5' // babel编译目标，electron版本
-                }
+                targets: "> 0.25%, not dead"
             }],
             require('@babel/preset-typescript'), // typescript支持
             [require('@babel/preset-react'), {development, throwIfNamespace: false}] // react支持

@@ -5,6 +5,8 @@ import {cls, imageUrl, stringify} from "../utils/utils";
 
 // @ts-ignore
 import style from "./index.scss";
+import {location} from "../utils/redux";
+import {useDispatch} from "react-redux";
 
 // TODO 图片
 
@@ -37,8 +39,11 @@ const tutorsInfo = [
 
 function TutorCard(props: { id: string, avatar: string, name: string, position: string, field: string, intro: string }) {
     const history = useHistory();
+    const dispatch = useDispatch();
+
     const handleClick = () => {
-        history.push({pathname: Routers.TUTOR, search: stringify({ tutor_id: props.id })});
+        dispatch(location(Routers.TUTOR));
+        history.push({pathname: Routers.TUTOR, search: stringify({tutor_id: props.id})});
     };
 
     return (

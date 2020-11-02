@@ -19,7 +19,7 @@ import GraduatePage from "./graduate";
 
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
-
+import Banner from "./components/banner";
 
 // @ts-ignore
 import '~resources/style/reset.global.scss';
@@ -41,6 +41,7 @@ function App(): React.ReactElement {
                     <Route path={Routers.GRADUATE} component={GraduatePage}/>
                 </Switch>
                 <Footer/>
+                <Banner/>
             </HashRouter>
         </div>
     );

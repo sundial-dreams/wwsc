@@ -150,7 +150,7 @@ export const paperList = [
         url: "",
         title: "Integrated Design of JSCC Scheme based on Double Protograph LDPC Codes System",
         image: "",
-        anchors: "iwang Chen, Lin Wang*, Shaohua Hong, Yifan Chen",
+        anchors: "Qiwang Chen, Lin Wang*, Shaohua Hong, Yifan Chen",
         others: "IEEE Communication Letters, Vol. 23, No. 2, Feb. 2019(SCI, JCR3)"
     },
     {
@@ -166,7 +166,7 @@ export const paperList = [
         url: "",
         title: "Design and performance analysis of multilevel code-shifted M-ary differential chaos shift keying system",
         image: "",
-        anchors: "angquan Zhang, Weikai Xu, Yunfeng Wu, Lin Wang*",
+        anchors: "Bangquan Zhang, Weikai Xu, Yunfeng Wu, Lin Wang*",
         others: "IEEE Transactions on Circuits and Systems II: Express Briefs Vol. 66, No. 7, Jul. 2019. (SCI, JCR3)"
     },
     {
