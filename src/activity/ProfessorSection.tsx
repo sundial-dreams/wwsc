@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from "../components/title";
-import {professorList} from "./data";
+import {professorList} from "../data/activity";
 import {ProfessorInfoCard} from "./components";
 import modal from "../components/modal";
 

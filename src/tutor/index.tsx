@@ -1,5 +1,5 @@
 import React from 'react';
-import {tutorInfoMap} from "./data";
+import {tutorInfoMap} from "../data/tutor";
 import {parser} from "../utils/utils";
 
 //@ts-ignore

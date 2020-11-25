@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 // @ts-ignore
 import style from './index.scss';
 import {SubtitleWithNumber} from "../components/title";
-import {projectList} from "./data";
+import {projectList} from "../data/achievement";
 import Pagination from "../components/pagination";
 
 

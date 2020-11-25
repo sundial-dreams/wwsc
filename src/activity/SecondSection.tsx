@@ -1,6 +1,6 @@
 import {SubtitleWithNumber} from "../components/title";
 import React, {useState} from "react";
-import {companyInterviewList, photoList} from "./data";
+import {companyInterviewList, photoList} from "../data/activity";
 
 import {ActivityItem, PhotoCard, PhotoItem} from "./components";
 // @ts-ignore

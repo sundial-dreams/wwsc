@@ -1,7 +1,7 @@
 import React from "react";
 import {cls} from "../utils/utils";
 import Pagination from "../components/pagination";
-import {studentList1, studentList2, studentList3} from "./data";
+import {studentList1, studentList2, studentList3} from "../data/member";
 import modal from "../components/modal";
 import {StudentInfoCard} from "./components";
 

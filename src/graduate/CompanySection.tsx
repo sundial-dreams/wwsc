@@ -2,7 +2,7 @@ import React from "react";
 import {SubtitleWithNumber} from "../components/title";
 // @ts-ignore
 import style from "./index.scss";
-import {companies} from "./data";
+import {companies} from "../data/graduate";
 
 
 function CompanyLogoItem(props: { logo: string, name: string }) {

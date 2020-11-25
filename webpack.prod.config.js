@@ -194,7 +194,15 @@ module.exports = merge.smart(webpackBaseConfig, {
     },
     optimization: {
         splitChunks: {
-            chunks: 'all',
+            // 提取data依赖，以后更新数据时只需要更新vendor_data.js
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]data[\\/]/,
+                    name: "vendor_data",
+                    chunks: 'initial',
+                    priority: -10
+                },
+            }
         },
     },
     plugins: [

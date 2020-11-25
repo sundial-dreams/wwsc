@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {SubtitleWithNumber} from "../components/title";
-import {paperList, paperList2} from "./data";
+import {paperList, paperList2} from "../data/achievement";
 import Pagination from "../components/pagination";
 
 // @ts-ignore

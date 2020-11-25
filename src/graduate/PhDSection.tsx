@@ -2,7 +2,7 @@ import React from "react";
 import {SubtitleWithNumber} from "../components/title";
 // @ts-ignore
 import style from "./index.scss";
-import {phdList} from "./data";
+import {phdList} from "../data/graduate";
 
 function PhDItem(props: { avatar: string, name: string, year: string, intro: string }) {
     const avatar = props.avatar ? (<img alt="" data-src={props.avatar} className="lazyload blur-up"/>) : <div>{props.name[0]}</div>;

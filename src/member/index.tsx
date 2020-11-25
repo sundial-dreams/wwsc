@@ -4,7 +4,7 @@ import {useHistory} from 'react-router';
 import TutorCard from "./TutorCard";
 import {Card01, Card02, Card03} from "./StudentCard";
 import Title, {SubtitleWithNumber, TitlePosition} from "../components/title";
-import {tutorList} from "./data";
+import {tutorList} from "../data/member";
 import {Routers} from "../utils/constants";
 
 //@ts-ignore

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {SubtitleWithNumber} from "../components/title";
 import {ActivityItem, PhotoCard, PhotoItem} from "./components";
-import {AcademicSpeechList, photoList} from "./data";
+import {AcademicSpeechList, photoList} from "../data/activity";
 
 // @ts-ignore
 import style from "./index.scss";

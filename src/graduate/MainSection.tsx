@@ -1,6 +1,6 @@
 import React from "react";
 import {SubtitleWithNumber} from "../components/title";
-import {otherStudentList, studentList} from "./data";
+import {otherStudentList, studentList} from "../data/graduate";
 // @ts-ignore
 import style from "./index.scss";
 

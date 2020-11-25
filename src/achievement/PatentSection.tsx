@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {SubtitleWithNumber} from "../components/title";
 import Pagination from "../components/pagination";
-import {patentList} from "./data";
+import {patentList} from "../data/achievement";
 
 // @ts-ignore
 import style from "./index.scss";
