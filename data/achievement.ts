@@ -1,4 +1,4 @@
-import {imageUrl} from "../utils/utils";
+import {imageUrl} from "./utils";
 
 export const paperList = [
     {

@@ -1,10 +1,11 @@
 import React from 'react';
-
-//@ts-ignore
-import style from "./index.scss";
 import {tutorInfoMap} from "./data";
 import {parser} from "../utils/utils";
 
+//@ts-ignore
+import style from "./index.scss";
+
+const urlPrefix = "https://cmsadmin.xmu.edu.cn/system/_owners/wwcs/_webprj/pdf";
 
 export default function TutorPage() {
     const [, pathname] = window.location.href.split("#");
@@ -22,6 +23,7 @@ export default function TutorPage() {
                     <h2>{tutor.name} | {tutor.position}</h2>
                     <h4>研究领域：{tutor.field}</h4>
                     <h6>Email: <a href={`mailto: ${tutor.email}`}>{tutor.email}</a></h6>
+                    <h6>Resume: <a href={`${urlPrefix}/${id}.pdf`}>{tutor.name}的简历</a></h6>
                 </div>
                 <div className={style.right_block}>
                     <div className={style.tutor_avatar}>

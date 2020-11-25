@@ -12,7 +12,7 @@ import {useDispatch} from "react-redux";
 
 const tutorsInfo = [
     {
-        id: "wangling",
+        id: "wanglin",
         avatar: imageUrl("/wl.jpeg"),
         name: "王琳",
         position: "教授",

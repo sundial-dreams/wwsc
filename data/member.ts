@@ -1,4 +1,4 @@
-import {imageUrl} from "../utils/utils";
+import {imageUrl} from "./utils";
 
 export const studentList1 = [
     {
@@ -323,7 +323,7 @@ export const tutorList = [
         avatar: imageUrl("/wl.jpeg"),
         name: "王琳",
         position: "教授",
-        id: "wanglin",
+        id: "wangling",
         field: "宽带无线通信、信息论与编码",
         intro: "教育部新世纪优秀人才、中国电子学会理事"
     },
