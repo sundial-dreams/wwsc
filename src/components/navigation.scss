@@ -12,8 +12,38 @@
   transition: .3s;
   color: white;
 
+  .tag {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    font-size: 10px;
+    color: white;
+    z-index: 10;
+    background: red;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+
   &.hidden {
     top: -110%;
+  }
+
+  &.black_style {
+    color: #1f2329;
+    background: transparent;
+    box-shadow: none;
+    .right_block {
+      button {
+        position: relative;
+        &::after {
+          background: #1f2329;
+        }
+        &.concat_us_btn {
+          border-left: 1px solid #1f2329;
+        }
+      }
+    }
   }
 
   &.white_style {
@@ -23,17 +53,15 @@
     color: #646a73;
 
     .left_logo {
-      img {
-        background-blend-mode: white;
-      }
+
     }
 
     .right_block {
       button {
+        position: relative;
         &::after {
           background: #646a73;
         }
-
         &.concat_us_btn {
           border-left: 1px solid #646a73;
         }

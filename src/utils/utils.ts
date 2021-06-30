@@ -14,5 +14,13 @@ export const imageUrl: (url: string) => string = (url: string) => {
     url = url.replace(/^\//g, "");
     // TODO 需要改哦
     const prodPrefix = "https://cmsadmin.xmu.edu.cn/system/_owners/wwcs/_webprj/images/";
-    return isDev ? require(`~resources/images/${url}`).default : `${prodPrefix}/${url}`;
+    if (isDev) {
+        if (url.endsWith(".MOV")) {
+            return `main_page/resources/images/graduation_season/vedio.MOV`;
+        }
+
+        return require(`~resources/images/${url}`).default;
+    } else {
+        return `${prodPrefix}/${url}`;
+    }
 };

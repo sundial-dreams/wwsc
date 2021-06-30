@@ -24,6 +24,7 @@ import Banner from "./components/banner";
 // @ts-ignore
 import '~resources/style/reset.global.scss';
 import '~resources/style/global.global.scss';
+import GraduationSeason from "./GraduationSeason";
 
 
 function App(): React.ReactElement {
@@ -34,6 +35,7 @@ function App(): React.ReactElement {
                 <Navigation/>
                 <Switch>
                     <Route path={Routers.MAIN} exact component={MainPage}/>
+                    <Route path={Routers.GRADUATION_SEASON} component={GraduationSeason}/>
                     <Route path={Routers.MEMBER} component={MemberPage}/>
                     <Route path={Routers.TUTOR} component={TutorPage}/>
                     <Route path={Routers.ACTIVITY} component={ActivityPage}/>

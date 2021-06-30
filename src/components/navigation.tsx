@@ -10,6 +10,7 @@ import {location, StoreState} from "../utils/redux";
 
 const navTitles = [
     {name: "首页", router: Routers.MAIN},
+    {name: "毕业季", router: Routers.GRADUATION_SEASON, tag: "New"},
     {name: "成员", router: Routers.MEMBER},
     {name: "学术活动", router: Routers.ACTIVITY},
     {name: "学术成果", router: Routers.ACHIEVEMENT},
@@ -17,18 +18,19 @@ const navTitles = [
 ];
 
 const RoutersMap = {
-    "": 0,
     [Routers.MAIN]: 0,
-    [Routers.MEMBER]: 1,
-    [Routers.ACTIVITY]: 2,
-    [Routers.ACHIEVEMENT]: 3,
-    [Routers.GRADUATE]: 4
+    [Routers.GRADUATION_SEASON]: 1,
+    [Routers.MEMBER]: 2,
+    [Routers.ACTIVITY]: 3,
+    [Routers.ACHIEVEMENT]: 4,
+    [Routers.GRADUATE]: 5
 };
 
 
 export default function Navigation() {
     const [hidden, setHidden] = useState(false);
     const [whiteStyle, setWhiteStyle] = useState(false);
+    const [blackStyle, setBlackStyle] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
 
     const currentLocation = useSelector((state: StoreState) => state.currentLocation);
@@ -47,8 +49,8 @@ export default function Navigation() {
             pathname = pathname.replace(/\?+/g, "");
 
             const curPath = pathname;
-
             if (curPath !== "/") return;
+
 
             if (height > document.documentElement.clientHeight / 3) {
                 setWhiteStyle(true);
@@ -70,13 +72,22 @@ export default function Navigation() {
         let [_, pathname] = href.split("#");
         const curPath = pathname.replace(/\?+/g, "");
 
-        if (curPath !== Routers.MAIN) {
+        setActiveIndex(RoutersMap[curPath]);
+
+        if (curPath !== Routers.MAIN && curPath !== Routers.GRADUATION_SEASON) {
             setWhiteStyle(true);
         }
+
         if (curPath === Routers.MAIN && document.body.scrollTop < document.documentElement.clientHeight / 3) {
+            setBlackStyle(false);
             setWhiteStyle(false);
         }
-        setActiveIndex(RoutersMap[curPath]);
+
+        if (curPath === Routers.GRADUATION_SEASON) {
+            setWhiteStyle(false);
+            setBlackStyle(true);
+        }
+
     }, [currentLocation]);
 
 
@@ -85,14 +96,18 @@ export default function Navigation() {
             dispatch(location(item.router));
             history.push(item.router);
         };
+        const tagElem = !!item.tag && (<span className={style.tag}>{item.tag}</span>)
         return (
             <button type="button" key={i} onClick={handleClick}
-                    className={cls(i === activeIndex && style.active)}>{item.name}</button>
+                    className={cls(i === activeIndex && style.active)}>
+                {item.name}
+                {tagElem}
+            </button>
         );
     });
 
     return (
-        <div className={cls(style.navigation, hidden && style.hidden, whiteStyle && style.white_style)}>
+        <div className={cls(style.navigation, hidden && style.hidden, whiteStyle && style.white_style, blackStyle && style.black_style)}>
             <div className={style.left_logo}>
                 <div className={style.logo}>
                     <span>

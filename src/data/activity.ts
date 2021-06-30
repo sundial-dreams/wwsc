@@ -137,10 +137,10 @@ export const professorList = [
 
 export const photoList = [
     {photo: imageUrl("/activity/a.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
-    {photo: imageUrl("/activity/b.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
-    {photo: imageUrl("/activity/c.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
-    {photo: imageUrl("/activity/c.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
-    {photo: imageUrl("/activity/b.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
+    {photo: imageUrl("/activity/b.jpg"), text: "2017年王琳教授应陈嵘嵘教授邀请访问犹他大学"},
+    {photo: imageUrl("/activity/c.jpg"), text: "2017年王琳教授应陈嵘嵘教授邀请访问犹他大学"},
+    {photo: imageUrl("/activity/c.jpg"), text: "2017年王琳教授应陈嵘嵘教授邀请访问犹他大学"},
+    {photo: imageUrl("/activity/b.jpg"), text: "2017年王琳教授应陈嵘嵘教授邀请访问犹他大学"},
     {photo: imageUrl("/activity/a.jpg"), text: "2013年王琳教授与蔡少棠教授在UC berkeley合影"},
 ];
 
